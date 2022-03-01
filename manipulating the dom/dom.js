@@ -34,3 +34,11 @@ document.getElementById('forwardPage').onclick = function(event) {
   document.getElementById('reload').onclick = function(event) {
     window.location.reload(true);  //The location object contains information about the current URL.
   }
+
+  // You can get all ps and then target them like an array
+let pElements = document.getElementsByTagName('p');
+pElements[0].style.backgroundColor = "#EFDECD";
+ 
+// Target the html
+document.childNodes[0].style.backgroundColor = "#FAEBD7";
+ 
