@@ -105,9 +105,9 @@ function getChar(event) {
    
   // Clear all input elements
   document.getElementById('clearInputs').onclick = function(event) {
-    var inputElements = document.getElementsByTagName('input'); //returns element by it's tag name
+    var inputElements = document.getElementsByTagName('input'); //returns all elements by tag name
    
-    for (var i = 0; i < inputElements.length; i++) {
+    for (var i = 0; i < inputElements.length; i++) { //will go to each input element
     if (inputElements[i].type == "text") {
       inputElements[i].value = "";
     }
